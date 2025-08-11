@@ -5,23 +5,24 @@
 The goal of this task was to capture live network packets using Wireshark, identify common protocols, and understand the basic flow of network communication.
 
 **Procedure:**
-Installed Wireshark along with Npcap for packet capturing.
 
-Selected the active Wi-Fi interface to monitor live network traffic.
+1.Installed Wireshark along with Npcap for packet capturing.
 
-Started packet capture while performing activities such as:
+2.Selected the active Wi-Fi interface to monitor live network traffic.
 
-Visiting various websites in a browser.
+3.Started packet capture while performing activities such as:
 
-Running ping commands to external servers.
+4.Visiting various websites in a browser.
 
-Stopped capture after approximately one minute.
+5.Running ping commands to external servers.
 
-Applied filters (dns, http, tcp) to isolate and examine specific types of traffic.
+6.Stopped capture after approximately one minute.
 
-Identified at least three protocols from the captured packets.
+7.Applied filters (dns, http, tcp) to isolate and examine specific types of traffic.
 
-Exported the capture file in .pcapng format for future reference and analysis.
+8.dentified at least three protocols from the captured packets.
+
+9.Exported the capture file in .pcapng format for future reference and analysis.
 
 **Protocols Identified**
 **DNS (Domain Name System)**
@@ -43,6 +44,7 @@ Function: Provides reliable, connection-oriented data transfer.
 Observation: Noticed the standard three-way handshake (SYN → SYN-ACK → ACK) before data transfer began.
 
 **Findings**
+
 DNS lookups always occurred prior to web requests, showing the dependency on name resolution.
 
 HTTP traffic displayed full request and response details, making it easy to analyze.
@@ -52,6 +54,7 @@ TCP ensured reliable packet delivery and reordering where necessary.
 Encrypted HTTPS traffic appeared in the capture but its contents were not readable due to encryption.
 
 **Conclusion**
+
 This exercise provided practical exposure to real-time packet capturing, filtering, and protocol analysis. By understanding how these protocols operate and interact, it becomes easier to troubleshoot network issues and monitor communication patterns.
 
 
